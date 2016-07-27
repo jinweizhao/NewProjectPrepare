@@ -1,0 +1,33 @@
+//
+//  PrefixHeader.pch
+//  NewProjectPrepareDemo
+//
+//  Created by KDB on 16/7/27.
+//  Copyright © 2016年 Will-Z. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+    #ifdef __OBJC__
+
+
+    #import <AFNetworking.h>
+
+//    JMRoundedCorner 圆角处理
+    #import <UIView+RoundedCorner.h>
+
+
+    #define   MScreenWidth  [UIScreen mainScreen].bounds.size.width
+    #define   MScreenHeight   [UIScreen mainScreen].bounds.size.height
+
+    // (弱引用)
+    #define   WeakSelf      __weak typeof(self) weakSelf = self;
+
+
+
+
+    #endif
+
+
+#endif /* PrefixHeader_pch */
