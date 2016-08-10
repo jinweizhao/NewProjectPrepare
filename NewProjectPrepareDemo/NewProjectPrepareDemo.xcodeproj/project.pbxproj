@@ -15,6 +15,7 @@
 		492B3B591D4851DB00135C8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492B3B571D4851DB00135C8E /* LaunchScreen.storyboard */; };
 		492B3B641D4851DB00135C8E /* NewProjectPrepareDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 492B3B631D4851DB00135C8E /* NewProjectPrepareDemoTests.m */; };
 		492B3B6F1D4851DB00135C8E /* NewProjectPrepareDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 492B3B6E1D4851DB00135C8E /* NewProjectPrepareDemoUITests.m */; };
+		AFABF8AF1D5B7004000B2E6C /* UIView+WZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AFABF8AE1D5B7004000B2E6C /* UIView+WZExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		492B3B6E1D4851DB00135C8E /* NewProjectPrepareDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewProjectPrepareDemoUITests.m; sourceTree = "<group>"; };
 		492B3B701D4851DB00135C8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		492B3B7C1D48525000135C8E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		AFABF8AD1D5B7004000B2E6C /* UIView+WZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WZExtension.h"; sourceTree = "<group>"; };
+		AFABF8AE1D5B7004000B2E6C /* UIView+WZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WZExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,7 @@
 		492B3B481D4851DB00135C8E /* NewProjectPrepareDemo */ = {
 			isa = PBXGroup;
 			children = (
+				AFABF8AC1D5B6F5B000B2E6C /* Categorys */,
 				492B3B4C1D4851DB00135C8E /* AppDelegate.h */,
 				492B3B4D1D4851DB00135C8E /* AppDelegate.m */,
 				492B3B4F1D4851DB00135C8E /* ViewController.h */,
@@ -140,6 +144,15 @@
 				492B3B701D4851DB00135C8E /* Info.plist */,
 			);
 			path = NewProjectPrepareDemoUITests;
+			sourceTree = "<group>";
+		};
+		AFABF8AC1D5B6F5B000B2E6C /* Categorys */ = {
+			isa = PBXGroup;
+			children = (
+				AFABF8AD1D5B7004000B2E6C /* UIView+WZExtension.h */,
+				AFABF8AE1D5B7004000B2E6C /* UIView+WZExtension.m */,
+			);
+			path = Categorys;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				492B3B511D4851DB00135C8E /* ViewController.m in Sources */,
+				AFABF8AF1D5B7004000B2E6C /* UIView+WZExtension.m in Sources */,
 				492B3B4E1D4851DB00135C8E /* AppDelegate.m in Sources */,
 				492B3B4B1D4851DB00135C8E /* main.m in Sources */,
 			);
@@ -502,6 +516,7 @@
 				492B3B751D4851DB00135C8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		492B3B761D4851DB00135C8E /* Build configuration list for PBXNativeTarget "NewProjectPrepareDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +525,7 @@
 				492B3B781D4851DB00135C8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		492B3B791D4851DB00135C8E /* Build configuration list for PBXNativeTarget "NewProjectPrepareDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +534,7 @@
 				492B3B7B1D4851DB00135C8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
