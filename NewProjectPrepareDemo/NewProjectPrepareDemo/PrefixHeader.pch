@@ -12,7 +12,7 @@
     #ifdef __OBJC__
 
 
-//    #import <AFNetworking.h>
+    #import <AFNetworking.h>
 
 //    JMRoundedCorner 圆角处理
 //    #import <UIView+RoundedCorner.h>

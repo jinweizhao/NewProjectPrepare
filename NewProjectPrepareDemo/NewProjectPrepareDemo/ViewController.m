@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "WZNetManager.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    BOOL reach = [WZNetManager netWorkReachabilityWithURLString:@"https://baidu.com"];
+    NSLog(@"是否可连接 = %d",reach);
 }
 
 - (void)didReceiveMemoryWarning {

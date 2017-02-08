@@ -16,6 +16,7 @@
 		492B3B591D4851DB00135C8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492B3B571D4851DB00135C8E /* LaunchScreen.storyboard */; };
 		492B3B641D4851DB00135C8E /* NewProjectPrepareDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 492B3B631D4851DB00135C8E /* NewProjectPrepareDemoTests.m */; };
 		492B3B6F1D4851DB00135C8E /* NewProjectPrepareDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 492B3B6E1D4851DB00135C8E /* NewProjectPrepareDemoUITests.m */; };
+		493EBE651E4B13A500CBBA79 /* WZNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 493EBE641E4B13A500CBBA79 /* WZNetManager.m */; };
 		AFABF8AF1D5B7004000B2E6C /* UIView+WZExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AFABF8AE1D5B7004000B2E6C /* UIView+WZExtension.m */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,8 @@
 		492B3B6E1D4851DB00135C8E /* NewProjectPrepareDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewProjectPrepareDemoUITests.m; sourceTree = "<group>"; };
 		492B3B701D4851DB00135C8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		492B3B7C1D48525000135C8E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		493EBE631E4B13A500CBBA79 /* WZNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZNetManager.h; sourceTree = "<group>"; };
+		493EBE641E4B13A500CBBA79 /* WZNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZNetManager.m; sourceTree = "<group>"; };
 		AB52B0921A257D2F0E33B3FE /* libPods-NewProjectPrepareDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NewProjectPrepareDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFABF8AD1D5B7004000B2E6C /* UIView+WZExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WZExtension.h"; sourceTree = "<group>"; };
 		AFABF8AE1D5B7004000B2E6C /* UIView+WZExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WZExtension.m"; sourceTree = "<group>"; };
@@ -120,6 +123,7 @@
 		492B3B481D4851DB00135C8E /* NewProjectPrepareDemo */ = {
 			isa = PBXGroup;
 			children = (
+				493EBE621E4B137000CBBA79 /* WZNetManager */,
 				AFABF8AC1D5B6F5B000B2E6C /* Categorys */,
 				492B3B4C1D4851DB00135C8E /* AppDelegate.h */,
 				492B3B4D1D4851DB00135C8E /* AppDelegate.m */,
@@ -159,6 +163,15 @@
 				492B3B701D4851DB00135C8E /* Info.plist */,
 			);
 			path = NewProjectPrepareDemoUITests;
+			sourceTree = "<group>";
+		};
+		493EBE621E4B137000CBBA79 /* WZNetManager */ = {
+			isa = PBXGroup;
+			children = (
+				493EBE631E4B13A500CBBA79 /* WZNetManager.h */,
+				493EBE641E4B13A500CBBA79 /* WZNetManager.m */,
+			);
+			path = WZNetManager;
 			sourceTree = "<group>";
 		};
 		51C11595EEBA8FFD5AE8FE04 /* Pods */ = {
@@ -249,6 +262,7 @@
 				TargetAttributes = {
 					492B3B451D4851DA00135C8E = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = N729L435R7;
 					};
 					492B3B5E1D4851DB00135C8E = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -335,7 +349,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B867C8AF732C1402CA745C36 /* [CP] Copy Pods Resources */ = {
@@ -364,6 +378,7 @@
 				AFABF8AF1D5B7004000B2E6C /* UIView+WZExtension.m in Sources */,
 				492B3B4E1D4851DB00135C8E /* AppDelegate.m in Sources */,
 				492B3B4B1D4851DB00135C8E /* main.m in Sources */,
+				493EBE651E4B13A500CBBA79 /* WZNetManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +522,7 @@
 			baseConfigurationReference = 3C3F18435CDDE9B8554C2903 /* Pods-NewProjectPrepareDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N729L435R7;
 				INFOPLIST_FILE = NewProjectPrepareDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -520,6 +536,7 @@
 			baseConfigurationReference = 10FE2CFF88E63D946239A8B6 /* Pods-NewProjectPrepareDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N729L435R7;
 				INFOPLIST_FILE = NewProjectPrepareDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
